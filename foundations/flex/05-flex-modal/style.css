@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+/* * {
+  outline: 1px solid red;
+} */
+
 html, body {
   height: 100%;
 }
@@ -33,6 +37,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 12px;
 }
 
 .close-button {
@@ -66,4 +71,47 @@ button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+}
+
+.header {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Flexbox containers */
+.modal {
+  display: flex;
+}
+
+.icon-container {
+  display: flex;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 8px;
+}
+
+.top-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 8px;
+}
+
+/* .title-container {
+  margin: 4px;
+} */
+
+.body-container {
+  margin: 8px;
+}
+
+.button-container {
+  display: flex;
+  gap: 8px;
+  margin: 8px;
+  flex-flow: row wrap;
 }
